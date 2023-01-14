@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <template>
   <div class="container px-5">
     <div class="row header mb-5">
@@ -36,7 +32,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-6">
         <div class="jaw-section me-lg-5 d-flex justify-content-center">
           <svg class="jaw-anatomy" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 204.48 306.04" style="enable-background:new 0 0 204.48 306.04;" xml:space="preserve">
@@ -450,8 +446,8 @@
         </div>
       </div>
 
-      <div class="col-md-5 px-5">
-        <div class="d-flex justify-content-between align-items-end">
+      <div class="col-md-6 px-3">
+        <div class="d-flex justify-content-center justify-content-lg-between align-items-end pb-3">
           <div class="bar">
             <div class="h-100 d-flex flex-column justify-content-end">
               <h3 class="bar-percentage">52%</h3>
@@ -485,6 +481,8 @@
           </div>
 
         </div>
+
+      <div class="service-box mt-5 bg-white shadow-sm p-4 w-100">yyyyy</div>
       </div>
     </div>
 
@@ -511,11 +509,15 @@ export default {
   
 </script>
 
-<style scoped>
+<style>
   @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1280px;
     }
+  }
+
+  #app {
+    background-color: #F7F9FB;
   }
 
   .header {
@@ -524,31 +526,35 @@ export default {
   }
   .jaw-section {
     background-color: #00A8E4;
+    background-color: #7FD8FA;
     border-radius: 35px;
     padding: 40px 30px;
   }
 
   .jaw-anatomy {
-    max-height: 600px;
+    max-height: 550px;
   }
 
   .bar {
-    height: 300px;
+    height: 250px;
   }
 
   .bar .bar-percentage {
     color: rgb(90, 90, 90);
-    text-align: center;
+    font-size: 22px;
   }
 
   .bar .bar-graph {
-    width: 65px;
+    width: 25px;
     border-radius: 8px;
   }
 
   .bar .bar-title {
     font-size: 20px;
     color: rgb(90, 90, 90);
-    text-align: center;
+  }
+
+  .service-box {
+    border-radius: 15px;
   }
 </style>
