@@ -1,39 +1,35 @@
 <template>
-  <div class="container px-5">
-    <div class="row header mb-5">
-      <div class="d-flex justify-content-between">
-        <div>
-
-        </div>
-
-        <div>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
-          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-68.393" y1="231.9339" x2="291.6071" y2="-46.066">
-            <stop  offset="0" style="stop-color:#4AC7B3"/>
-            <stop  offset="1" style="stop-color:#0091FC"/>
-          </linearGradient>
-          <path style="fill:url(#SVGID_1_);" d="M128.6,20.43c-3.19,1.01-17.38,2.05-18.94,2.05c-14.52,0-30.58-2.17-40.82-4.22
-            c-13.87-2.77-27.9,1.16-38.5,10.77c-9.92,9-14.31,21.67-14.01,34.08c0.76,31.23,12.05,62.81,21,98.65
-            c2.62,10.48,6.62,20.02,13.87,25.12c5.83,4.11,13.34,5.26,22.58,1.88c11.53-4.23,26.28-14.44,36.02-21.83
-            c11.41,16.17,22.07,23.96,32.48,23.7c16.71-0.38,22.69-16.66,25.75-28.87c6.77-27.09,18.46-71.64,21-98.65
-            C191.77,33.95,161.39,10.03,128.6,20.43z M96.6,162.23c-3.17,2.26-12.52,9.24-20.42,13.32c-10.58,5.46-17.89,3.26-21.14-1.02
-            c-2.2-2.89-4.47-7.67-6.45-15.58c-5.11-20.45-14.51-50.91-18.63-75.4c-2.38-14.14-2.01-19.1-2.05-21.28
-            c-0.17-8.86,2.94-18.02,10.23-24.63c7.84-7.11,18.2-10.02,28.42-7.98c9.24,1.84,23,3.76,36.39,4.29
-            c-10.24,7.16-15.86,11.78-27.39,8.82c-3.11-0.79-6.27,1.08-7.07,4.18c-0.8,3.11,1.08,6.27,4.19,7.07c28,7.17,31.39-16.07,67.6-24.21
-            c16.57-1.7,30.8,7.12,35.32,19.55C188.02,83.56,128.56,139.43,96.6,162.23z M156.75,158.95c-7.12,28.51-21,24.73-37.81,0.77
-            c18.69-15.32,38.39-34.99,52.09-55.14C166.45,123.95,160.54,143.8,156.75,158.95z"/>
-          </svg>
+  <header class="header bg-white">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="./assets/images/profile2.jpg" alt="profile picture" class="profile">
+          <div class="ps-4">
+            <h4 class="mb-0">Jasmin Joseph</h4>
+            <p class="text-secondary mt-0">patient</p>
+          </div>
         </div>
 
         <div>
 
         </div>
+
+        <div>
+          <div class="bars firstLoad" @click="hamburgerMenu($event)">
+            <div class="bar first"></div>
+            <div class="bar second"></div>
+            <div class="bar third"></div>
+          </div>
+        </div>
+
       </div>
     </div>
+  </header>
+
+  <main class="container px-3">
     <div class="row">
-      <div class="col-md-6">
-        <div class="jaw-section me-lg-5 d-flex justify-content-center">
+      <div class="col-md-4">
+        <div class="jaw-section me-lg-5 d-flex justify-content-center h-100">
           <svg class="jaw-anatomy" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 204.48 306.04" style="enable-background:new 0 0 204.48 306.04;" xml:space="preserve">
             <g>
@@ -61,7 +57,7 @@
                 c1.41-4.85,3.26-6.82,6.36-6.82c1.77,0,4.03,0.66,6.73,1.96c3.26,1.59,5.11,3.4,5.5,5.38c0.37,1.89-0.57,4.02-2.8,6.33
                 c-0.26,0.29-0.52,0.55-0.81,0.81c-0.01,0.01-0.03,0.02-0.03,0.03C136.18,23.68,133.71,24.94,131.12,24.94
                 C131.12,24.94,131.12,24.94,131.12,24.94z"/>
-              <path @click="changeColor($event)" style="fill:#fff;cursor:pointer" d="M145.61,35.4c-1.91,0-3.47-0.6-5.21-1.99c-2.55-2.05-4.34-4.49,1.68-11.67
+              <path @click="changeColor($event)" style="fill:#F7CD9D;cursor:pointer" d="M145.61,35.4c-1.91,0-3.47-0.6-5.21-1.99c-2.55-2.05-4.34-4.49,1.68-11.67
                 c2.69-3.21,4.81-4.65,6.89-4.65c2.09,0,4.35,1.44,6.92,4.41c2.16,2.53,3.02,4.79,2.56,6.74c-0.46,1.93-2.24,3.63-5.3,5.05
                 c-0.38,0.19-0.73,0.35-1.11,0.5c-0.01,0-0.03,0.01-0.04,0.02C149.44,34.88,147.36,35.4,145.61,35.4L145.61,35.4z"/>
               <path @click="changeColor($event)" style="fill:#fff;cursor:pointer" d="M173.28,68.79c-4.19,0-6.71-1.08-8.43-3.62l-0.04-0.05c-0.09-0.13-0.19-0.29-0.28-0.44l-0.04-0.06
@@ -89,7 +85,7 @@
                 c1.73-1.67,4.23-2.48,7.65-2.48c1.07,0,2.25,0.08,3.5,0.24c4.95,0.63,8.51,1.98,10.89,4.14c0.01,0.01,0.03,0.02,0.04,0.04
                 c2.36,1.88,3.54,4.15,4.06,7.83c0.32,2.27,0.22,4.33-0.28,6.12c-0.88,3.71-3.71,6.38-8.66,8.19
                 C20.78,151.24,18.62,151.61,16.47,151.61C16.47,151.61,16.47,151.61,16.47,151.61z"/>
-              <path @click="changeColor($event)" style="fill:#fff;cursor:pointer" d="M42.49,50.65c-0.85-0.02-1.73-0.09-2.62-0.23c-4.03-0.62-6.76-2.04-7.91-4.11
+              <path @click="changeColor($event)" style="fill:#F7CD9D;cursor:pointer" d="M42.49,50.65c-0.85-0.02-1.73-0.09-2.62-0.23c-4.03-0.62-6.76-2.04-7.91-4.11
                 c-1.07-1.93-0.79-4.49,0.79-7.42c2.56-4.7,5.32-6.99,8.44-6.99c1.91,0,4.07,0.79,6.82,2.5c1.09,0.67,2.07,1.34,2.9,1.97
                 c0.03,0.02,0.06,0.04,0.09,0.06c0.02,0.01,0.2,0.12,0.42,0.34c0.02,0.02,0.04,0.03,0.05,0.05c2.36,1.91,3.45,3.59,3.43,5.27
                 c0,0.09,0,0.16-0.01,0.23l0,0.05c-0.01,0.06-0.01,0.13-0.02,0.19l-0.01,0.05c-0.01,0.09-0.02,0.15-0.03,0.21
@@ -233,11 +229,11 @@
                 c0.43-0.06,0.82-0.09,1.19-0.09c1.71,0,3.62,0.53,5.99,4.39c0.01,0.01,0.02,0.03,0.03,0.05c0.15,0.22,0.28,0.45,0.41,0.7
                 c1.22,2.16,1.52,3.95,0.9,5.35c-0.6,1.37-2.13,2.43-4.52,3.15C124.51,303.16,123.25,303.38,122.23,303.38
                 C122.23,303.38,122.23,303.38,122.23,303.38z"/>
-              <path @click="changeColor($event)" style="fill:#fff;cursor:pointer" d="M164.75,270.18c-1.47,0-3.08-0.28-4.78-0.84c-2.75-0.9-5.33-3.48-6.43-6.42
+              <path @click="changeColor($event)" style="fill:#F7CD9D;cursor:pointer" d="M164.75,270.18c-1.47,0-3.08-0.28-4.78-0.84c-2.75-0.9-5.33-3.48-6.43-6.42
                 c-0.83-2.24-0.7-4.33,0.38-5.88c2.82-4.06,5.58-5.95,8.69-5.95c1.88,0,3.99,0.67,6.65,2.11c1.78,0.96,3.14,2.06,4.02,3.27
                 c0.11,0.15,0.27,0.26,0.45,0.31c1.59,2.43,1.4,5.35-0.58,8.7c-1.22,2.07-3.57,4.57-7.83,4.69
                 C165.12,270.18,164.94,270.18,164.75,270.18z"/>
-              <path @click="changeColor($event)" style="fill:#fff;cursor:pointer" d="M107.82,306.04c-1.34,0-2.28-0.27-2.86-0.82c-0.96-0.9-1.12-2.65-1.06-5.18
+              <path @click="changeColor($event)" style="fill:#F7CD9D;cursor:pointer" d="M107.82,306.04c-1.34,0-2.28-0.27-2.86-0.82c-0.96-0.9-1.12-2.65-1.06-5.18
                 c0.13-7.06,2.87-8.01,5.53-8.01c2.69,0,4.16,0.95,5.75,6.56c0.58,2.08,0.45,3.74-0.4,4.93c-0.85,1.2-2.46,1.98-4.78,2.33
                 C109.19,305.98,108.45,306.04,107.82,306.04C107.82,306.04,107.82,306.04,107.82,306.04z"/>
             </g>
@@ -446,84 +442,234 @@
         </div>
       </div>
 
-      <div class="col-md-6 px-3">
-        <div class="d-flex justify-content-center justify-content-lg-between align-items-end pb-3">
-          <div class="bar">
+      <div class="col-md-5 pe-lg-5 pt-4 pt-lg-3">
+        <div class="d-flex d-lg-none justify-content-around align-items-end px-3 mt-5">
+          <div class="bars-graph">
             <div class="h-100 d-flex flex-column justify-content-end">
               <h3 class="bar-percentage">52%</h3>
               <div class="bar-graph my-3" style="background-color:#FBC78E; height:52%"></div>
             </div>
-            <h4 class="bar-title">Cleaning</h4>
           </div>
 
-          <div class="bar">
+          <div class="bars-graph">
             <div class="h-100 d-flex flex-column justify-content-end">
               <h3 class="bar-percentage">19%</h3>
               <div class="bar-graph my-3" style="background-color:#7BDFF2; height:19%"></div>
             </div>
-            <h4 class="bar-title">Prosthetis</h4>
           </div>
 
-          <div class="bar">
+          <div class="bars-graph">
             <div class="h-100 d-flex flex-column justify-content-end">
               <h3 class="bar-percentage">74%</h3>
               <div class="bar-graph my-3" style="background-color:#CDB3D6; height:74%"></div>
             </div>
-            <h4 class="bar-title">Caries</h4>
           </div>
 
-          <div class="bar">
+          <div class="bars-graph">
             <div class="h-100 d-flex flex-column justify-content-end">
               <h3 class="bar-percentage">22%</h3>
               <div class="bar-graph my-3" style="background-color:#A3F7B5; height:32%"></div>
             </div>
-            <h4 class="bar-title">Other</h4>
+          </div>
+        </div>
+      <div class="service-box mt-5 mt-lg-0 bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center" style="border-left: 5px solid #FBC78E;">
+        <img src="./assets/images/cleaning.png" alt="">
+        <div>
+          <h4 class="bar-title mb-0">Dental Cleaning</h4>
+          <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+        </div>
+        
+        <div class="btn">
+          <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            viewBox="0 0 185.343 185.343" xml:space="preserve">
+          <g>
+            <g>
+              <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+                l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+                c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
+            </g>
+          </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="service-box bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center mt-3" style="border-left: 5px solid #7BDFF2;">
+        <img src="./assets/images/prosthesis.png" alt="">
+        <div>
+          <h4 class="bar-title mb-0">Dental Prosthesis</h4>
+          <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+        </div>
+        
+        <div class="btn">
+          <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            viewBox="0 0 185.343 185.343" xml:space="preserve">
+          <g>
+            <g>
+              <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+                l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+                c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
+            </g>
+          </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="service-box bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center mt-3" style="border-left: 5px solid #CDB3D6;">
+        <img src="./assets/images/carries.png" alt="">
+        <div>
+          <h4 class="bar-title mb-0">Dental Caries</h4>
+          <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+        </div>
+        
+        <div class="btn">
+          <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            viewBox="0 0 185.343 185.343" xml:space="preserve">
+          <g>
+            <g>
+              <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+                l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+                c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
+            </g>
+          </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="service-box bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center mt-3" style="border-left: 5px solid #A3F7B5;">
+        <img src="./assets/images/other.png" alt="">
+        <div>
+          <h4 class="bar-title mb-0">Other Services</h4>
+          <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+        </div>
+        
+        <div class="btn">
+          <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            viewBox="0 0 185.343 185.343" xml:space="preserve">
+          <g>
+            <g>
+              <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+                l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+                c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
+            </g>
+          </g>
+          </svg>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-3 mt-auto">
+        <img src="./assets/images/dentist.png" alt="" class="d-block mx-auto mt-5 mt-lg-0 dentist-pic">
+      </div>
+    </div> 
+
+    <div class="row mt-5 px-3">
+      <h1 class="text-center mt-5 mb-4">Your History</h1>
+      <div class="history-table p-4 mt-4 mb-5">
+        <div class="history-box px-4 mb-5 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+          <div>
+            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
+            <span class="detail-badge">every 8 hours</span>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
 
+          <div>
+            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
+          </div>
         </div>
 
-      <div class="service-box mt-5 bg-white shadow-sm p-4 w-100">yyyyy</div>
+        <div class="history-box px-4 my-5 d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
+            <span class="detail-badge">every 8 hours</span>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div>
+            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
+          </div>
+        </div>
+
+        <div class="history-box px-4 my-5 d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
+            <span class="detail-badge">every 8 hours</span>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div>
+            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
+          </div>
+        </div>
+
+        <div class="history-box px-4 my-5 d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
+            <span class="detail-badge">every 8 hours</span>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div>
+            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
+          </div>
+        </div>
+
+        <div class="history-box px-4 mt-5 d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
+            <span class="detail-badge">every 8 hours</span>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div>
+            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="row">
-
-    </div>
-  </div>
+  </main>
 </template> 
 
 <script>
 export default {
   data() {
     return {
-      toothIsSelected : false
     }
   },
 
   methods: {
     changeColor(e) {
       e.target.style.fill = '#F7CD9D'
-    }
+    },
+
+    hamburgerMenu(e) {
+      e.target.classList.remove('firstLoad')
+      let bars = [...document.querySelectorAll('.bars .bar')];
+      bars.forEach(bar => {
+        bar.classList.toggle('active');
+      })
+    } 
   }
 }
   
 </script>
 
 <style>
-  @media (min-width: 1400px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      max-width: 1280px;
-    }
-  }
-
+  
   #app {
     background-color: #F7F9FB;
   }
 
   .header {
     padding: 20px 30px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    box-shadow: 0px 0px 15px rgba(0 0 0 / 12%);
   }
+
+  .profile {
+    border-radius: 50%;
+    width: 100px;
+  }
+
   .jaw-section {
     background-color: #00A8E4;
     background-color: #7FD8FA;
@@ -532,29 +678,165 @@ export default {
   }
 
   .jaw-anatomy {
-    max-height: 550px;
+    max-height: 520px;
   }
 
-  .bar {
-    height: 250px;
+  .bars-graph {
+    height: 220px;
   }
 
-  .bar .bar-percentage {
+  .bars-graph .bar-percentage {
     color: rgb(90, 90, 90);
     font-size: 22px;
   }
 
-  .bar .bar-graph {
+  .bars-graph .bar-graph {
     width: 25px;
     border-radius: 8px;
   }
 
-  .bar .bar-title {
+  .bars-graph .bar-title {
     font-size: 20px;
     color: rgb(90, 90, 90);
   }
 
+  @media (max-width: 768px) {
+    .bars-graph .bar-title {
+      font-size: 18px !important;
+    }
+
+    .dentist-pic {
+      width: 170px;
+    }
+  }
+
   .service-box {
     border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(56 79 108 / 10%);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;;
   }
+
+.bar{
+  width:40px;
+  height:4px;
+  background-color:rgb(173, 173, 173);
+  margin-bottom: 6px;
+  border-radius:5px;
+  cursor : pointer;
+}
+
+.bars .first.active{
+  animation: firstbar 1s forwards;
+}
+.bars .second.active{
+  animation: secondbar 1s forwards;
+}
+.bars .third.active{
+  animation: thirdbar 1s forwards;
+}
+
+.bars:not(.firstLoad) .first:not(.active){
+  animation: firstbarRev 1s forwards;
+}
+.bars:not(.firstLoad) .second:not(.active){
+  animation: secondbarRev 1s forwards;
+}
+.bars:not(.firstLoad) .third:not(.active){
+  animation: thirdbarRev 1s forwards;
+}
+
+@keyframes firstbar{
+  0%{
+    transform : translateY(0rem);
+  }
+  50%{
+    transform : translateY(9px);
+  }
+  100%{
+    
+    transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@keyframes secondbar{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+
+@keyframes thirdbar{
+  0%{
+    transform : translateY(0rem);
+  }
+  50%{
+    transform : translateY(-9px);
+  }
+  100%{
+    transform: translateY(-9px) rotate(45deg);
+  }
+}
+
+@keyframes firstbarRev{
+  0%{
+    transform : translateY(9px)  rotate(45deg);
+  }
+  50%{
+    transform : translateY(9px) rotate(0deg);
+  }
+  100%{
+    transform : translateY(0rem) rotate(0deg);
+  }
+}
+
+@keyframes secondbarRev{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes thirdbarRev{
+  0%{
+    transform : translateY(-9px) rotate(-45deg) ;
+  }
+  50%{
+    transform : translateY(-9px) rotate(0deg);
+  }
+  100%{
+    transform : translateY(0rem) rotate(0deg);
+  }
+}
+
+.bars.firstLoad{
+  animation : none !important;
+}
+
+.history-table {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0 0 0 / 7%);
+}
+
+.history-box {
+  border-left: 5px solid #12B0F5;
+}
+
+.detail-badge {
+  background-color: #FBC78E;
+  padding: 5px 12px;
+  font-weight: 500;
+}
+
+.learn-more {
+  background-color: #00A8E4;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+}
 </style>
