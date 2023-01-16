@@ -1,5 +1,5 @@
 <template>
-  <Carousel :items-to-show="10" :wrap-around="true" class="py-4">
+  <Carousel :items-to-show="10" :wrap-around="true" :breakpoints="breakpoints" class="py-4">
     <Slide v-for="slide in 12" :key="slide">
       <div class="carousel__item">
         <h5 class="mb-0">{{ slide }}</h5>
@@ -24,6 +24,27 @@ export default defineComponent({
     Slide,
     Navigation,
   },
+  data: () => ({
+    // carousel settings
+    settings: {
+      itemsToShow: 1,
+      snapAlign: 'center',
+    },
+    // breakpoints are mobile first
+    // any settings not specified will fallback to the carousel settings
+    breakpoints: {
+      // 700px and up
+      300: {
+        itemsToShow: 4,
+        snapAlign: 'center',
+      },
+      // 1024 and up
+      1024: {
+        itemsToShow: 10,
+        snapAlign: 'start',
+      },
+    },
+  })
 })
 </script>
 
@@ -194,5 +215,11 @@ export default defineComponent({
 .carousel--rtl .carousel__next {
   right: auto;
   left: 0;
+}
+
+@media (max-width: 768px) {
+  .carousel__item {
+    padding: 5px 20px;
+  }
 }
 </style>

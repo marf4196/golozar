@@ -5,7 +5,7 @@
         <div class="d-flex align-items-center">
           <img src="./assets/images/profile2.jpg" alt="profile picture" class="profile">
           <div class="ps-4">
-            <h4 class="mb-0">Jasmin Joseph</h4>
+            <h4 class="mb-0 username">Jasmin Joseph</h4>
             <p class="text-secondary mt-0">patient</p>
           </div>
         </div>
@@ -563,17 +563,17 @@
       </div>
     </div> 
 
-    <div class="row mt-5 px-3 pt-4">
-      <h1 class="text-center mt-5 mb-5">Your History</h1>
+    <div class="row mt-5 px-3 pt-md-4">
+      <h1 class="text-center mt-md-5 mb-md-4">Your History</h1>
 
-      <Carousel class="mb-5 px-5" />
+      <Carousel class="mb--md-5 px-5" />
 
       <div class="col-md-3 d-none d-md-block">
         <img src="./assets/images/dentist2.png" alt="" class="d-block mx-auto mt-5 mt-lg-0 dentist-pic">
       </div>
-      <div class="col-md-9 ps-5">
-        <div class="history-table p-5 mt-4 mb-5">
-          <div class="history-box px-4 mb-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="col-md-9 ps-md-5">
+        <div class="history-table p-3 p-md-5 mt-4 mb-5">
+          <div class="history-box px-4 mb-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="py-2">
               
               <div class="d-flex align-items-center">
@@ -589,7 +589,7 @@
             </div>
           </div>
 
-          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="py-2">
               
               <div class="d-flex align-items-center">
@@ -604,7 +604,7 @@
             </div>
           </div>
 
-          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="py-2">
               
               <div class="d-flex align-items-center">
@@ -620,7 +620,7 @@
             </div>
           </div>
 
-          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="py-2">
               
               <div class="d-flex align-items-center">
@@ -635,7 +635,7 @@
             </div>
           </div>
 
-          <div class="history-box px-4 mt-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div class="history-box px-4 mt-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="py-2">
               
               <div class="d-flex align-items-center">
@@ -734,6 +734,20 @@ export default {
 
     .dentist-pic {
       width: 170px;
+    }
+
+    .profile {
+      width: 80px;
+    }
+
+    .username {
+      font-size: 21px;
+    }
+
+    .learn-more {
+      font-size: 14px;
+      padding: 5px 10px !important;
+      margin-bottom: 8px;
     }
   }
 
