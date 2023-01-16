@@ -472,89 +472,90 @@
             </div>
           </div>
         </div>
-      <div class="service-box mt-5 mt-lg-0 bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center" style="border-left: 5px solid #FBC78E;">
-        <img src="./assets/images/cleaning.png" alt="">
-        <div>
-          <h4 class="bar-title mb-0">Dental Cleaning</h4>
-          <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
-        </div>
-        
-        <div class="btn">
-          <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-            viewBox="0 0 185.343 185.343" xml:space="preserve">
-          <g>
-            <g>
-              <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
-                l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
-                c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
-            </g>
-          </g>
-          </svg>
-        </div>
-      </div>
 
-      <div class="service-box bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center mt-3" style="border-left: 5px solid #7BDFF2;">
-        <img src="./assets/images/prosthesis.png" alt="">
-        <div>
-          <h4 class="bar-title mb-0">Dental Prosthesis</h4>
-          <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+        <div class="service-box mt-5 mt-lg-0 bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center" style="border-left: 5px solid #FBC78E;">
+          <img src="./assets/images/cleaning.png" alt="">
+          <div>
+            <h4 class="bar-title mb-0">Dental Cleaning</h4>
+            <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+          </div>
+          
+          <div class="btn">
+            <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+              viewBox="0 0 185.343 185.343" xml:space="preserve">
+              <g>
+                <g>
+                  <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+                    l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+                    c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
-        
-        <div class="btn">
-          <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-            viewBox="0 0 185.343 185.343" xml:space="preserve">
-          <g>
-            <g>
-              <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
-                l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
-                c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
-            </g>
-          </g>
-          </svg>
-        </div>
-      </div>
 
-      <div class="service-box bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center mt-3" style="border-left: 5px solid #CDB3D6;">
-        <img src="./assets/images/carries.png" alt="">
-        <div>
-          <h4 class="bar-title mb-0">Dental Caries</h4>
-          <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+        <div class="service-box bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center mt-3" style="border-left: 5px solid #7BDFF2;">
+          <img src="./assets/images/prosthesis.png" alt="">
+          <div>
+            <h4 class="bar-title mb-0">Dental Prosthesis</h4>
+            <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+          </div>
+          
+          <div class="btn">
+            <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+              viewBox="0 0 185.343 185.343" xml:space="preserve">
+              <g>
+                <g>
+                  <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+                    l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+                    c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
-        
-        <div class="btn">
-          <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-            viewBox="0 0 185.343 185.343" xml:space="preserve">
-          <g>
-            <g>
-              <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
-                l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
-                c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
-            </g>
-          </g>
-          </svg>
-        </div>
-      </div>
 
-      <div class="service-box bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center mt-3" style="border-left: 5px solid #A3F7B5;">
-        <img src="./assets/images/other.png" alt="">
-        <div>
-          <h4 class="bar-title mb-0">Other Services</h4>
-          <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+        <div class="service-box bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center mt-3" style="border-left: 5px solid #CDB3D6;">
+          <img src="./assets/images/carries.png" alt="">
+          <div>
+            <h4 class="bar-title mb-0">Dental Caries</h4>
+            <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+          </div>
+          
+          <div class="btn">
+            <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+              viewBox="0 0 185.343 185.343" xml:space="preserve">
+              <g>
+                <g>
+                  <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+                    l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+                    c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
-        
-        <div class="btn">
-          <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-            viewBox="0 0 185.343 185.343" xml:space="preserve">
-          <g>
-            <g>
-              <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
-                l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
-                c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
-            </g>
-          </g>
-          </svg>
+
+        <div class="service-box bg-white px-3 px-lg-4 w-100 d-flex justify-content-between align-items-center mt-3" style="border-left: 5px solid #A3F7B5;">
+          <img src="./assets/images/other.png" alt="">
+          <div>
+            <h4 class="bar-title mb-0">Other Services</h4>
+            <p class="text-secondary mb-0 mt-1">removal of dental plaque from teeth</p>
+          </div>
+          
+          <div class="btn">
+            <svg height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+              viewBox="0 0 185.343 185.343" xml:space="preserve">
+              <g>
+                <g>
+                  <path style="fill:#12B0F5;" d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+                    l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+                    c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
-      </div>
       </div>
 
       <div class="col-md-3 mt-auto">
@@ -562,80 +563,106 @@
       </div>
     </div> 
 
-    <div class="row mt-5 px-3">
-      <h1 class="text-center mt-5 mb-4">Your History</h1>
-      <div class="history-table p-4 mt-4 mb-5">
-        <div class="history-box px-4 mb-5 d-flex flex-column flex-lg-row justify-content-between align-items-center">
-          <div>
-            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
-            <span class="detail-badge">every 8 hours</span>
-            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row mt-5 px-3 pt-4">
+      <h1 class="text-center mt-5 mb-5">Your History</h1>
+
+      <Carousel class="mb-5 px-5" />
+
+      <div class="col-md-3 d-none d-md-block">
+        <img src="./assets/images/dentist2.png" alt="" class="d-block mx-auto mt-5 mt-lg-0 dentist-pic">
+      </div>
+      <div class="col-md-9 ps-5">
+        <div class="history-table p-5 mt-4 mb-5">
+          <div class="history-box px-4 mb-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="py-2">
+              
+              <div class="d-flex align-items-center">
+                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
+                <span class="detail-badge mt-1">Medicine</span>
+              </div>
+              
+              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div>
+              <a href="#" class="btn btn-primary learn-more">More Info</a>
+            </div>
           </div>
 
-          <div>
-            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
-          </div>
-        </div>
+          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="py-2">
+              
+              <div class="d-flex align-items-center">
+                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
+              </div>
+              
+              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
+            </div>
 
-        <div class="history-box px-4 my-5 d-flex justify-content-between align-items-center">
-          <div>
-            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
-            <span class="detail-badge">every 8 hours</span>
-            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-
-          <div>
-            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
-          </div>
-        </div>
-
-        <div class="history-box px-4 my-5 d-flex justify-content-between align-items-center">
-          <div>
-            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
-            <span class="detail-badge">every 8 hours</span>
-            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+              <a href="#" class="btn btn-primary learn-more">More Info</a>
+            </div>
           </div>
 
-          <div>
-            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
-          </div>
-        </div>
+          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="py-2">
+              
+              <div class="d-flex align-items-center">
+                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
+                <span class="detail-badge mt-1">Medicine</span>
+              </div>
+              
+              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
+            </div>
 
-        <div class="history-box px-4 my-5 d-flex justify-content-between align-items-center">
-          <div>
-            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
-            <span class="detail-badge">every 8 hours</span>
-            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-
-          <div>
-            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
-          </div>
-        </div>
-
-        <div class="history-box px-4 mt-5 d-flex justify-content-between align-items-center">
-          <div>
-            <h4 class="d-inline pe-3">Tetracyclines (marketed as Irgasan DP300)</h4> 
-            <span class="detail-badge">every 8 hours</span>
-            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+              <a href="#" class="btn btn-primary learn-more">More Info</a>
+            </div>
           </div>
 
-          <div>
-            <a href="#" class="btn btn-primary learn-more">Learn  more</a>
+          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="py-2">
+              
+              <div class="d-flex align-items-center">
+                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
+              </div>
+              
+              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div>
+              <a href="#" class="btn btn-primary learn-more">More Info</a>
+            </div>
+          </div>
+
+          <div class="history-box px-4 mt-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="py-2">
+              
+              <div class="d-flex align-items-center">
+                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
+                <span class="detail-badge mt-1">Medicine</span>
+              </div>
+              
+              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div>
+              <a href="#" class="btn btn-primary learn-more">More Info</a>
+            </div>
           </div>
         </div>
       </div>
+      
     </div>
   </main>
 </template> 
 
 <script>
+import Carousel from "./components/carousel.vue"
 export default {
-  data() {
-    return {
-    }
+  components: {
+    Carousel
   },
-
   methods: {
     changeColor(e) {
       e.target.style.fill = '#F7CD9D'
@@ -714,7 +741,7 @@ export default {
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgb(56 79 108 / 10%);
     padding-top: 0.75rem;
-    padding-bottom: 0.75rem;;
+    padding-bottom: 0.75rem;
   }
 
 .bar{
@@ -824,19 +851,23 @@ export default {
 }
 
 .history-box {
-  border-left: 5px solid #12B0F5;
+  border-left: 4px solid #12B0F5;
+  /* background-color: #f4f8f9; */
+  background-color: #0370d90a;
 }
 
 .detail-badge {
-  background-color: #FBC78E;
-  padding: 5px 12px;
-  font-weight: 500;
+    background-color: #FBC78E;
+    padding: 3px 8px;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 18px;
 }
 
 .learn-more {
-  background-color: #00A8E4;
+  background-color: #12b0f5;
   border: none;
-  border-radius: 10px;
-  padding: 10px 18px;
+  border-radius: 0px;
+  padding: 8px 12px;
 }
 </style>
