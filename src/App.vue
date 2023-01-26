@@ -743,7 +743,7 @@ export default {
     }
 
     .dentist-pic {
-      width: 170px;
+      width: 135px;
     }
 
     .profile {
