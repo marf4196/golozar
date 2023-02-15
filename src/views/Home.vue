@@ -1,5 +1,5 @@
-<template>
-  <header class="header bg-white">
+<template >
+  <header class="header bg-white" v-if="token">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
@@ -26,7 +26,7 @@
     </div>
   </header>
 
-  <main class="container px-3">
+  <main class="container px-3" v-if="token">
     <div class="row">
       <div class="col-md-4">
         <div class="jaw-section me-lg-5 d-flex justify-content-center h-100">
@@ -573,82 +573,21 @@
       </div>
       <div class="col-md-9 ps-md-5">
         <div class="history-table p-3 p-md-5 mt-4 mb-5">
-          <div class="history-box px-4 mb-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+          <div v-for="task in tasks"
+          class="history-box px-4 mb-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="py-2">
               
               <div class="d-flex align-items-center">
-                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
-                <span class="detail-badge mt-1">Medicine</span>
+                <h4 class="pe-3 mb-0">{{task.title}}</h4> 
+                <span class="detail-badge mt-1">{{task.type}}</span>
               </div>
               
-              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
+              <p class="text-secondary mb-0 mt-2">{{task.description}}</p>
             </div>
 
-            <div>
+            <!-- <div>
               <a href="#" class="btn btn-primary learn-more">More Info</a>
-            </div>
-          </div>
-
-          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-            <div class="py-2">
-              
-              <div class="d-flex align-items-center">
-                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
-              </div>
-              
-              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div>
-              <a href="#" class="btn btn-primary learn-more">More Info</a>
-            </div>
-          </div>
-
-          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-            <div class="py-2">
-              
-              <div class="d-flex align-items-center">
-                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
-                <span class="detail-badge mt-1">Medicine</span>
-              </div>
-              
-              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div>
-              <a href="#" class="btn btn-primary learn-more">More Info</a>
-            </div>
-          </div>
-
-          <div class="history-box px-4 my-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-            <div class="py-2">
-              
-              <div class="d-flex align-items-center">
-                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
-              </div>
-              
-              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div>
-              <a href="#" class="btn btn-primary learn-more">More Info</a>
-            </div>
-          </div>
-
-          <div class="history-box px-4 mt-4 py-2 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-            <div class="py-2">
-              
-              <div class="d-flex align-items-center">
-                <h4 class="pe-3 mb-0">Tetracyclines (Irgasan DP300)</h4> 
-                <span class="detail-badge mt-1">Medicine</span>
-              </div>
-              
-              <p class="text-secondary mb-0 mt-2">Lorem ipsum dolor amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div>
-              <a href="#" class="btn btn-primary learn-more">More Info</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -670,7 +609,11 @@ export default {
       toothModal : {
         text : `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
         title: 'Dental Prosthesis'
-      }
+      },
+
+      token: null,
+
+      tasks: []
     }
   },
   methods: {
@@ -684,7 +627,30 @@ export default {
       bars.forEach(bar => {
         bar.classList.toggle('active');
       })
-    } 
+    },
+
+      async getTasks() {
+        let res = await fetch('http://194.5.212.149/api/tasks', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'bearer ' + this.token,
+            },
+        })
+        res = await res.json()
+        this.tasks = res.tasks
+    }
+  },
+
+  created() {
+    this.token = localStorage.getItem('jwt')
+  },
+
+  mounted() {
+    if(!this.token) {
+      this.$router.push({ path: '/login' })
+      return
+    }
+    this.getTasks();
   }
 }
   

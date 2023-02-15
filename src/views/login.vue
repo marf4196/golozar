@@ -38,16 +38,16 @@ export default {
                 phone: this.phoneNumber,
                 password: this.password
             }
-            const res =
-            await fetch('http://194.5.212.149/api/login', {
+            let res = await fetch('http://194.5.212.149/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(body),
             })
-            console.log(res)
-            if(res.status == 200) {
+            res = await res.json()
+            if(res.status == 'success') {
+                localStorage.setItem('jwt', res.authorisation.token)
                 this.$router.push({ path: '/' })
             }
         }
