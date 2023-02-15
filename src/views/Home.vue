@@ -3,10 +3,12 @@
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
-          <img src="../assets/images/profile2.jpg" alt="profile picture" class="profile">
+          <img src="../assets/images/default.png" alt="profile picture" class="profile">
           <div class="ps-4">
-            <h4 class="mb-0 username">Jasmin Joseph</h4>
-            <p class="text-secondary mt-0">patient</p>
+            <h4 class="mb-0 username">{{ user.firstname + ' ' + user.lastname }}</h4>
+            <router-link to="/login" class="text-secondary mt-0 mb-0 cursor-pointer text-decoration-none mt-2" @click="signOut()">
+              Sign Out
+            </router-link >
           </div>
         </div>
 
@@ -613,6 +615,8 @@ export default {
 
       token: null,
 
+      user: null,
+
       tasks: []
     }
   },
@@ -629,20 +633,26 @@ export default {
       })
     },
 
-      async getTasks() {
-        let res = await fetch('http://194.5.212.149/api/tasks', {
-            method: 'GET',
-            headers: {
-                'Authorization': 'bearer ' + this.token,
-            },
-        })
-        res = await res.json()
-        this.tasks = res.tasks
+    async getTasks() {
+      let res = await fetch('http://194.5.212.149/api/tasks', {
+          method: 'GET',
+          headers: {
+              'Authorization': 'bearer ' + this.token,
+          },
+      })
+      res = await res.json()
+      this.tasks = res.tasks
+    },
+
+    signOut() {
+      localStorage.clear()
     }
   },
 
   created() {
-    this.token = localStorage.getItem('jwt')
+    this.token = localStorage.getItem('jwt');
+    this.user = JSON.parse(localStorage.getItem('user'));
+    console.log(this.user)
   },
 
   mounted() {

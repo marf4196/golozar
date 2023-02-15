@@ -7,11 +7,12 @@
                 <h2 class="mb-4 fw-bolder">LOGIN TO CONTINUE</h2>
                 <div class="mb-3 mt-3">
                     <label for="phone" class="form-label fw-semibold">Phone Number:</label>
-                    <input type="tel" pattern="[0-9]{10}" v-model="phoneNumber" class="form-control py-2"  id="phone" placeholder="Enter phone number" name="phone">
+                    <input type="tel" required pattern="[0-9]{10}" v-model="phoneNumber" class="form-control py-2"  id="phone" placeholder="Enter phone number" name="phone">
+                    <small>Example: 912*******</small>
                 </div>
                 <div class="mb-3 py-2">
                     <label for="pwd" class="form-label fw-semibold">Password:</label>
-                    <input type="password" v-model="password" class="form-control py-2" id="pwd" placeholder="Enter password" name="pswd">
+                    <input type="password" required v-model="password" class="form-control py-2" id="pwd" placeholder="Enter password" name="pswd">
                 </div>
                 <div class="form-check mb-3 py-2">
                     <label class="form-check-label fw-semibold">
@@ -47,7 +48,9 @@ export default {
             })
             res = await res.json()
             if(res.status == 'success') {
+                console.log(res)
                 localStorage.setItem('jwt', res.authorisation.token)
+                localStorage.setItem('user', JSON.stringify(res.user))
                 this.$router.push({ path: '/' })
             }
         }
