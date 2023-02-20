@@ -1,9 +1,10 @@
 <template>
-  <Carousel :items-to-show="10" :wrap-around="true" :breakpoints="breakpoints" class="py-4">
-    <Slide v-for="slide in 12" :key="slide">
+  <Carousel :items-to-show="items.length "  :breakpoints="breakpoints" class="py-4">
+    <Slide v-for="slide in items" :key="slide">
       <div class="carousel__item">
-        <h5 class="mb-0">{{ slide }}</h5>
-        <h5>Oct</h5>
+        <h5 class="mb-2">{{ slide.substring(0,10) }}</h5>
+        <h5 class="mb-0">{{ slide.substring(11,16) }}</h5>
+        <!-- <h4>Oct</h4> -->
       </div>
     </Slide>
 
@@ -19,6 +20,9 @@ import { Carousel, Navigation, Slide } from 'vue3-carousel'
 
 export default defineComponent({
   name: 'WrapAround',
+  props: {
+    items : Array
+  },
   components: {
     Carousel,
     Slide,
@@ -33,15 +37,15 @@ export default defineComponent({
     // breakpoints are mobile first
     // any settings not specified will fallback to the carousel settings
     breakpoints: {
-      // 700px and up
+      // 300px and up
       300: {
-        itemsToShow: 4,
+        itemsToShow: 1,
         snapAlign: 'center',
       },
-      // 1024 and up
-      1024: {
-        itemsToShow: 10,
-        snapAlign: 'start',
+      // 700 and up
+      700: {
+        itemsToShow: 2,
+        snapAlign: 'center',
       },
     },
   })
@@ -56,7 +60,7 @@ export default defineComponent({
 
 .carousel__item {
     background-color: #ffffff;
-    padding: 5px 30px;
+    padding: 12px 30px;
     border-radius: 12px;
     cursor: pointer;
     box-shadow: 0px 0px 10px rgb(56 79 108 / 8%);
@@ -135,6 +139,7 @@ export default defineComponent({
 
   /* Fix iOS scrolling #22 */
   transform: translateZ(0);
+
 }
 .carousel__pagination {
   display: flex;
@@ -219,7 +224,11 @@ export default defineComponent({
 
 @media (max-width: 768px) {
   .carousel__item {
-    padding: 5px 20px;
+    padding: 8px 20px;
+  }
+
+  .carousel__slide {
+    width: 100% !important;
   }
 }
 </style>

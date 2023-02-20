@@ -568,7 +568,8 @@
     <div class="row mt-5 px-3 pt-md-4">
       <h1 class="text-center mt-md-5 mb-md-4">Your History</h1>
 
-      <Carousel class="mb--md-5 px-5" />
+      <Carousel class="d-md-none mb--md-5 px-5" :items="dates"  />
+      <Carousel class="d-none d-md-block mb--md-5 px-5" :items="dates" v-if="dates.length > 3" />
 
       <div class="col-md-3 d-none d-md-block">
         <img src="../assets/images/dentist2.png" alt="" class="d-block mx-auto mt-5 mt-lg-0 dentist-pic">
@@ -581,15 +582,23 @@
               
               <div class="d-flex align-items-center">
                 <h4 class="pe-3 mb-0">{{task.title}}</h4> 
-                <span class="detail-badge mt-1">{{task.type}}</span>
+                <span class="detail-badge mt-1" v-if="task.task_category_id == 1">Appointment</span>
+                <span class="detail-badge mt-1" v-if="task.task_category_id == 2">Medicine</span>
               </div>
               
               <p class="text-secondary mb-0 mt-2">{{task.description}}</p>
             </div>
 
-            <!-- <div>
-              <a href="#" class="btn btn-primary learn-more">More Info</a>
-            </div> -->
+            <div>
+              <p class="mb-2">
+                <i class="fa fa-calendar pe-2" style="color:#12B0F5"></i>
+                {{task.date.substring(0,10)}} 
+              </p>
+              <p class="mb-0">
+                <i class="fa fa-stopwatch pe-2" style="color:#12B0F5"></i>
+                 {{task.date.substring(11,16)}}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -623,12 +632,12 @@
 
                     <h5 class="mt-4 mb-3">Services:</h5>
                     <ul>
-                      <li v-for="(service, index) in toothModal.tooth[0].services" :key="index" class="mb-3 mt-2 d-flex justify-content-between">
+                      <li v-for="(service, index) in toothModal.tooth[0].services" :key="index" class="mb-3 mt-2 d-flex flex-column flex-md-row justify-content-between">
                         <div>
                           <i class="fa fa-circle px-1" style="font-size:8px; color:#f7cd9d"></i>
                             {{service.title}} ( {{service.description}}  )
                         </div>
-                        <div dir="rtl">
+                        <div dir="rtl" class="text-end">
                           هزینه:
                          {{service.cost}} تومان 
                         </div>
@@ -660,7 +669,8 @@ export default {
       user: null,
       tasks: [],
       teeth: [],
-      coloredTooth: []
+      coloredTooth: [],
+      dates: []
     }
   },
   methods: {
@@ -681,10 +691,12 @@ export default {
           method: 'GET',
           headers: {
               'Authorization': 'bearer ' + this.token,
+              'Accept': 'application/json',
           },
       })
       res = await res.json()
       this.tasks = res.tasks
+      this.calculateDates();
     },
 
     async getTeeth() {
@@ -692,6 +704,7 @@ export default {
           method: 'GET',
           headers: {
               'Authorization': 'bearer ' + this.token,
+              'Accept': 'application/json',
           },
       })
       res = await res.json()
@@ -713,6 +726,16 @@ export default {
       }, 500);
     },
 
+    calculateDates() {
+      let dates = [];
+      console.log(this.tasks)
+      this.tasks.forEach(task => {
+        dates.push(task.date.substring(0,16))
+      })
+      this.dates = dates;
+      console.log(dates)
+    },
+
     signOut() {
       localStorage.clear()
     }
@@ -732,7 +755,7 @@ export default {
       this.$router.push({ path: '/login' })
       return
     }
-    
+
   }
 }
   
@@ -751,6 +774,10 @@ export default {
     list-style: none;
     font-family: 'IranSans';
     font-size: 14px;
+  }
+
+  .history-box {
+    font-family: 'IranSans';
   }
 
   .header {
