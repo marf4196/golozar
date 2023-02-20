@@ -7,8 +7,12 @@
 </template>
 
 <style>
+@font-face {
+  font-family: 'IranSans';
+  src: url('./assets/fonts/IRANSansWebFaNum.woff');
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif, 'IranSans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;

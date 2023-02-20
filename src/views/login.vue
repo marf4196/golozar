@@ -39,7 +39,7 @@ export default {
                 phone: this.phoneNumber,
                 password: this.password
             }
-            let res = await fetch('http://194.5.212.149/api/login', {
+            let res = await fetch('http://194.5.212.149/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

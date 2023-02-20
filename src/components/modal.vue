@@ -6,12 +6,18 @@
                 <div class="modal-header">
                     <div class="d-flex align-items-center">
                         <img src="../assets/images/modal-icon.png">
-                        <h5 class="modal-title ps-3" id="exampleModalLabel">{{modalTitle}}</h5>
+                        <h5 class="modal-title ps-3" id="exampleModalLabel">Tooth Status</h5>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body py-4">
-                    {{modalBody}}
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <i class="fa fa-calendar"></i>
+                            <p>{{tooth.created_at.substring(0,11)}}</p>
+                        </div>
+                    </div>
+                    <ul></ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -23,9 +29,8 @@
 <script>
 export default {
     props: {
-        modalBody: Text,
-        modalTitle: Text,
-        target: Text
+        target: Text,
+        tooth: Object
     }
 }
 </script>
