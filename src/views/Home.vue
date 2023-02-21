@@ -83,7 +83,7 @@
                 c-0.11-0.51-0.19-1.01-0.23-1.49c0,0,0-0.01,0-0.01c-0.23-2.67,0.37-6.77,8.15-11.45c2.56-1.56,5.51-2.41,8.31-2.41
                 c5.71,0,9.93,3.45,11.3,9.23c0.94,4.03,0.3,7.96-1.83,11.05c-1.3,1.89-3.32,3.37-5.7,4.18c-1.27,0.43-2.32,0.74-3.11,0.93
                 c-0.48,0.11-1.04,0.23-1.65,0.34C183.93,95.14,183.07,95.21,182.21,95.21L182.21,95.21z"/>
-              <path @click="changeColor($event,1)" :style="[this.coloredTooth.includes(7) ? 'fill:#F7CD9D' : 'fill:#fff']" style="cursor:pointer" d="M16.47,151.61c-4,0-13.38-1.34-14.1-13.76c-0.27-5.35,0.73-9.16,2.99-11.34
+              <path @click="changeColor($event,1)" :style="[this.coloredTooth.includes(1) ? 'fill:#F7CD9D' : 'fill:#fff']" style="cursor:pointer" d="M16.47,151.61c-4,0-13.38-1.34-14.1-13.76c-0.27-5.35,0.73-9.16,2.99-11.34
                 c1.73-1.67,4.23-2.48,7.65-2.48c1.07,0,2.25,0.08,3.5,0.24c4.95,0.63,8.51,1.98,10.89,4.14c0.01,0.01,0.03,0.02,0.04,0.04
                 c2.36,1.88,3.54,4.15,4.06,7.83c0.32,2.27,0.22,4.33-0.28,6.12c-0.88,3.71-3.71,6.38-8.66,8.19
                 C20.78,151.24,18.62,151.61,16.47,151.61C16.47,151.61,16.47,151.61,16.47,151.61z"/>
@@ -621,12 +621,12 @@
                     <div class="d-flex justify-content-start">
                         <div class="d-flex  align-items-center">
                             <i class="fa fa-calendar pe-2" style="color:#7fd8fa"></i>
-                            <p v-if="toothModal.tooth" class="mb-0 mt-1" style="font-size:15px">{{toothModal.tooth[0].created_at.substring(0,10)}}</p>
+                            <p v-if="toothModal.tooth[0]" class="mb-0 mt-1" style="font-size:15px">{{toothModal.tooth[0].created_at.substring(0,10)}}</p>
                         </div>
 
                         <div class="d-flex  align-items-center ps-4">
                             <i class="fa fa-tooth pe-2" style="color:#7fd8fa"></i>
-                            <p v-if="toothModal.tooth" class="mb-0 mt-1" style="font-size:15px">tooth number : {{toothModal.tooth[0].tooth_index}}</p>
+                            <p v-if="toothModal.tooth[0]" class="mb-0 mt-1" style="font-size:15px">tooth number : {{toothModal.tooth[0].tooth_index}}</p>
                         </div>
                     </div>
 

@@ -1,18 +1,21 @@
 <template>
     <div class="container login-wrapper d-flex flex-column justify-content-center ">
+        <img src="../assets/images/login-top.png" alt="tooth" class="d-md-none img-fluid d-block mx-auto mb-4" style="max-width:150px">
         <div class="col-12 col-xxl-10 mx-auto d-flex align-items-center login">
             <img src="../assets/images/login-side.png" alt="tooth" class="d-none d-md-block img-fluid">
+
+            
 
             <form class="w-100 px-4 py-4 ps-xxl-4 me-md-3 pe-xxl-5" @submit.prevent>
                 <h2 class="mb-4 fw-bolder">LOGIN TO CONTINUE</h2>
                 <div class="mb-3 mt-3">
                     <label for="phone" class="form-label fw-semibold">Phone Number:</label>
-                    <input type="tel" required pattern="[0-9]{10}" v-model="phoneNumber" class="form-control py-2"  id="phone" placeholder="Enter phone number" name="phone">
+                    <input type="tel" minlength="10" maxLength="10" required pattern="[0-9]{10}" v-model="phoneNumber" class="form-control py-2"  id="phone" placeholder="Enter phone number" name="phone">
                     <small>Example: 912*******</small>
                 </div>
                 <div class="mb-3 py-2">
                     <label for="pwd" class="form-label fw-semibold">Password:</label>
-                    <input type="password" required v-model="password" class="form-control py-2" id="pwd" placeholder="Enter password" name="pswd">
+                    <input type="password" minlength="1" required v-model="password" class="form-control py-2" id="pwd" placeholder="Enter password" name="pswd">
                 </div>
                 <div class="form-check mb-3 py-2">
                     <label class="form-check-label fw-semibold">
