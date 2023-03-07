@@ -28,7 +28,10 @@
                     <input class="form-check-input" type="checkbox" name="remember"> Remember me
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary submit-btn" @click="login">Submit</button>
+                <button type="submit" class="btn btn-primary submit-btn" @click="login">
+                    Submit
+                    <div class="spinner-border spinner-border-sm ms-2" role="status" v-if="showSpinner"></div>
+                </button>
             </form>
         </div>
     </div>
@@ -40,7 +43,8 @@ export default {
         return {
             phoneNumber: '',
             password: '',
-            loginFailed: false
+            loginFailed: false,
+            showSpinner: false,
         }
     },
     methods: {
